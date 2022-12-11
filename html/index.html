@@ -4,19 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>inicio</title>
     <link rel="stylesheet" href="/css/index.css">
 </head>
 <body>
-    <section class="logo">
-        <div>
-            <ul id="navbar">
-                <li><a href="">Home</a></li>
-                <li><a href="">Etapas Escolares</a></li>
-                <li><a href="">Nosotros</a></li>
-                <li><a href="">Contactanos</a></li>
+
+    <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">MARKO JARA</h1>
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">Inicio</a>
+                </li>
+                <li class="menu__item menu__item--show">
+                    <a href="#about" class="menu__link">Nosotros <img src="/svg/arrow.svg" class="menu__arrow"></a>
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="#galery" class="menu__link menu__link--inside">Mision y Vision</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#galery" class="menu__link menu__link--inside">Nuestro Personal</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#history" class="menu__link menu__link--inside">Logros</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="#galery" class="menu__link menu__link--inside">Areas</a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="menu__item  menu__item--show">
+                    <a href="#produ" class="menu__link">Niveles<img src="/svg/arrow.svg" class="menu__arrow"></a>    
+                    <ul class="menu__nesting">
+                        <li class="menu__inside">
+                            <a href="/frappuccinos.html" class="menu__link menu__link--inside">Inicial</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/pastries.html" class="menu__link menu__link--inside">Primaria</a>
+                        </li>
+                        <li class="menu__inside">
+                            <a href="/boxes.html" class="menu__link menu__link--inside">Secundaria</a>
+                        </li>
+                    </ul>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#contact" class="menu__link">Contactanos</a>
+                </li>
+
             </ul>
-        </div>
-    </section>
+
+            <div class="menu__hamburguer">
+                <img src="/svg/menu.svg" class="menu__img">
+            </div>
+        </section>
+    </nav>
+
+
+
+
+    <script src="/js/navbar.js"></script>
+
 </body>
 </html>
