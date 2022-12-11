@@ -47,6 +47,7 @@
 }
 
 .menu__item:hover{
+    background-color: #181818;
     --clip: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     --transform: rotate(0);
 }
@@ -61,7 +62,7 @@
 }
 
 .menu__link:hover{
-    background-color: #0f0f0fd5;
+    background-color: #181818;
 }
 
 
@@ -81,7 +82,11 @@
     bottom: 0;
     width: max-content;
     transform: translateY(100%);
-    background-color: rgba(13, 13, 180, 0.815);
+    background-color: #181818;
+    -webkit-transition:clip-path .3s;
+    -moz-transition:clip-path .3s;
+    -ms-transition:clip-path .3s;
+    -o-transition:clip-path .3s;
 }
 
 .menu__link--inside{
@@ -89,7 +94,7 @@
 }  
 
 .menu__link--inside:hover{
-    background-color: #0f0f0fd5;
+    background-color: rgba(13, 13, 180, 0.404);
 }
 
 .menu__hamburguer{
@@ -176,39 +181,74 @@
 
 
 
-/* Navbar */
 
-/* #header{
+/* FOOTER */
+
+.footer{
+    background-color: rgba(13, 13, 180, 0.815);
+    color: #181818;
     display: flex;
-    justify-content: center;
-    justify-content: space-between;
-    padding: 30px 80px;
-    background-color: #e3e6f3;
-}
-
-#header h1{
-    font-size: 30px;
-    font-weight: bold;
-}
-
-#navbar{
-    display: flex;
-    align-items: center;
+    margin-top: 70px;
+    padding: 70px;
     justify-content: center;
 }
 
-#navbar li {
+.footer h1{
+    margin-top: 50px;
+}
+
+.links{
+    margin-left: 120px;
+}
+
+
+.links li{
+    display: flex;
+    margin-left: 50px;
     list-style: none;
-    padding: 0 80px;
 }
 
-#navbar li a{
+
+
+.links a{
+    color: black;
+    flex-direction: column;
+    padding: 10px;
+    list-style: none;
     text-decoration: none;
-    font-size: 16px;
-    font-weight: 600;
-    color: #1a1a1a;  
 }
 
-#navbar li a:hover{
-    color: rgba(0, 128, 0, 0.555);
-} */
+
+
+
+/* FOOTER COL */
+
+
+.footer .col{
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .col a {
+    color: black;
+    padding: 10px;
+    list-style: none;
+    text-decoration: none;
+    margin-left: 60px;
+}
+
+.footer .col h4{
+    color: black;
+    padding: 10px;
+}
+
+
+
+.footer .links a:hover{
+    color: white;
+}
+
+.footer .col a:hover{
+    color: white;
+}
