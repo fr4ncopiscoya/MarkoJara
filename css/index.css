@@ -17,8 +17,8 @@
     justify-content: space-around;
     transition: 0.7s;
     z-index: 10;
-    background-color: rgba(13, 13, 180, 0.815);
-    color: #fff;
+    background-color: #008080;
+    /* color: #fff; */
     height: 70px;
 }
 
@@ -62,7 +62,7 @@
 }
 
 .menu__link:hover{
-    background-color: #181818;
+    background-color: #0080807e;
 }
 
 
@@ -91,10 +91,10 @@
 
 .menu__link--inside{
     padding: 30px 100px 30px 20px;
-}  
+}
 
 .menu__link--inside:hover{
-    background-color: rgba(13, 13, 180, 0.404);
+    background-color: #008080;
 }
 
 .menu__hamburguer{
@@ -111,6 +111,172 @@
     width: 36px;
 }
 
+/* HOME ----- */
+
+header{
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+video{
+    width: 100%;
+    /* height: 100vh; */
+}
+
+.inicio{
+    width: 100%;
+    height: 100%;
+    /* margin: auto 0px; */
+    /* padding-top: 13rem; */
+    /* margin: 0px auto; */
+    position: absolute;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio h1{
+    /* z-index: 100; */
+    font-size: 10px;
+    font-weight: bold;
+    color: #e1e1e1;
+    margin-top: 13rem;
+    margin-bottom: 13rem;
+}
+
+.inicio h1::after{
+    display: block;
+    width: 30%;
+    content: "";
+    margin: auto;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #00000079;
+}
+
+
+
+
+/* CARTAS -- GRADOS */
+#grados{
+    padding-top: 5rem;
+    height: 100vh;
+    text-align: center;
+    background-color: #e1e1e1;
+}
+
+#grados h1{
+    font-size: 30px;
+}
+
+/* #grados .container{
+    margin-top: 60px;
+} */
+
+
+
+#grados p{
+    display: none;
+}
+
+#grados .cartas{
+    margin-top: 30px;
+}
+
+/* #grados .carta{
+
+} */
+
+.carta{
+    margin-bottom: 30px;
+    /* background-color:red; */
+    background-position: center center;
+    background-size: cover;
+    border-radius: 30px;
+    padding: 50px 0px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
+
+.carta:first-child{
+    color: #e1e1e1;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/inicial.jpg");
+        /* background-color: red; */
+        background-position: center center;
+        background-size: cover;
+        /* background-color: blue; */
+}
+
+.carta:nth-child(2){
+    color: #e1e1e1;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("/img/primaria.jpg");
+}
+
+.carta:nth-child(3){
+    color: #e1e1e1;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+        ,url("/img/secundaria.jpg");
+}
+
+.carta h2{
+    margin-bottom: 15px;
+}
+
+.carta button{
+    padding: 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.carta button:hover{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(93, 193, 185);
+    transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    -ms-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+
+
+
+
+/* MEDIA DE BARRA DE NAVEGACIÓN */
 @media (max-width:800px){
     .menu__hamburguer{
         display: flex;
@@ -168,7 +334,11 @@
         transform: translateY(0);
         height: 0;
         transition: height .3s;
-    }
+        -webkit-transition: height .3s;
+        -moz-transition: height .3s;
+        -ms-transition: height .3s;
+        -o-transition: height .3s;
+}
 
     .menu__link--inside{
         width: 90%;
@@ -179,33 +349,51 @@
 
 
 
-
-
-
 /* FOOTER */
 
 .footer{
-    background-color: rgba(13, 13, 180, 0.815);
+    /* padding-top: 13rem; */
+    /* background-color: #e1e1e1; */
+    /* height: 100vh; */
+    margin-top: 120px;
+    /* background-color: #008080; */
     color: #181818;
-    display: flex;
-    margin-top: 70px;
-    padding: 70px;
-    justify-content: center;
+    text-align: center;
 }
 
-.footer h1{
-    margin-top: 50px;
+.footer-sub{
+    margin: 20px;
 }
+
+.footer-sub .col{
+    margin: 20px;
+}
+
+
+footer .enlaces{
+    margin-top: 30px;
+    text-align: center;
+    /* padding-top: 20px; */
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
 
 .links{
-    margin-left: 120px;
+    margin: 0px auto;
 }
 
 
 .links li{
     display: flex;
-    margin-left: 50px;
+    /* margin: auto; */
     list-style: none;
+}
+
+.col{
+    /* padding: 50px; */
+    /* background-color: red; */
 }
 
 
@@ -225,17 +413,19 @@
 
 
 .footer .col{
-    margin-left: 120px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .footer .col a {
+    margin: auto 0px;
     color: black;
     padding: 10px;
     list-style: none;
     text-decoration: none;
-    margin-left: 60px;
 }
 
 .footer .col h4{
@@ -246,9 +436,10 @@
 
 
 .footer .links a:hover{
-    color: white;
+    /* color: white; */
+    font-weight: bold;
 }
 
 .footer .col a:hover{
-    color: white;
+    font-weight: bold;
 }
