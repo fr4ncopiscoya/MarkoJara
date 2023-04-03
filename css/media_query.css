@@ -1,0 +1,132 @@
+@media (max-width:800px){
+    .menu__hamburguer{
+        display: flex;
+    }
+
+    .menu__item{
+        --clip:0;
+        overflow:hidden ;
+    }
+
+    .menu__item--active{
+        --transform: rotate(0);
+        --background: #181818;
+    }
+
+    .menu__item--show{
+        background-color: var(--background);
+    }
+
+
+    .menu__links{
+        position: fixed;
+        max-width: 400px;
+        width: 100%;
+        top: 70px;
+        bottom: 0;
+        right: 0;
+        background-color: #181818;
+        overflow-y: auto;
+        display: grid;
+        grid-auto-rows: max-content;
+        transform: translateX(100%);
+    }
+
+    .menu__links--show{
+        transform: unset;
+        width: 100%;
+    }
+
+    .menu__link{
+        padding: 25px 0;
+        padding-left: 30px;
+        height: auto;
+    }
+
+    .menu__arrow{
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .menu__nesting{
+        display: grid;
+        position: unset;
+        width: 100%;
+        transform: translateY(0);
+        height: 0;
+        transition: height .3s;
+        -webkit-transition: height .3s;
+        -moz-transition: height .3s;
+        -ms-transition: height .3s;
+        -o-transition: height .3s;
+}
+
+    .menu__link--inside{
+        width: 90%;
+        margin-left: auto;
+        border-left: 1px solid #798499;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width:600px){
+.footer{
+    height: 80vh;
+    margin-top: 10rem;
+}
+}
+
+
+
+
+
+
+
+@media (min-width:970px){
+    #grados .cartas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #grados p{
+        padding: 10px;
+        display: block;
+        justify-content: center;
+        /* align-items: center; */
+        text-align: center;
+    }
+
+    .cartas{
+        display: flex;
+    }
+
+    .carta{
+        width: 100%;
+        height: 100%;
+        margin: 10px;
+        margin-bottom: 3rem;
+        /*background-color:red;
+        */background-position: center center;
+        background-size: cover;
+        /* border-radius: 0p1x;
+        padding: 50px;
+        -webkit-border-radius: 0p1x;
+        -moz-border-radius: 0p1x;
+        -ms-border-radius: 0p1x;
+        -o-border-radius: 0p1x; */
+}
+}
+
+
+
+
+/* @media (max-width:500px){
+    .footer{
+        margin-top: 10rem;
+    }
+} */

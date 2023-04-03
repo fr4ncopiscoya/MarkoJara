@@ -7,6 +7,10 @@
     font-family: 'Spartan', sans-serif;
 }
 
+body{
+    background-color: #e6e6e6;
+}
+
 
 .menu{
     position: fixed;
@@ -114,10 +118,10 @@
 /* HOME ----- */
 
 header{
-    width: 100%;
+    /* width: 100%;
     height: auto;
     position: relative;
-    overflow: hidden;
+    overflow: hidden; */
 }
 
 video{
@@ -126,76 +130,85 @@ video{
 }
 
 .inicio{
-    width: 100%;
-    height: 100%;
+    /* width: 100%;
+    height: 100%; */
     /* margin: auto 0px; */
     /* padding-top: 13rem; */
     /* margin: 0px auto; */
-    position: absolute;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/img/home_jara.jpg");
+    /* position: absolute; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .inicio h1{
     /* z-index: 100; */
-    font-size: 10px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
     font-weight: bold;
     color: #e1e1e1;
-    margin-top: 13rem;
-    margin-bottom: 13rem;
+    padding: 20px;
+    /* margin-top: 13rem; */
+    /* margin-bottom: 13rem; */
 }
 
-.inicio h1::after{
+/* .inicio h1::after{
     display: block;
     width: 30%;
     content: "";
     margin: auto;
-}
+} */
 
-.overlay{
+/* .overlay{
     width: 100%;
     height: 100%;
     position: absolute;
     background-color: #00000079;
-}
+} */
 
 
 
 
 /* CARTAS -- GRADOS */
 #grados{
-    padding-top: 5rem;
+    padding: 2rem;
+    padding-top: 0px;
     height: 100vh;
     text-align: center;
-    background-color: #e1e1e1;
+    /* background-color: #e1e1e1; */
 }
 
 #grados h1{
+    /* margin-top: 5rem; */
     font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
-/* #grados .container{
-    margin-top: 60px;
-} */
-
-
 
 #grados p{
     display: none;
 }
 
-#grados .cartas{
-    margin-top: 30px;
+#grados .container{
+    margin-top: 5rem;
 }
 
-/* #grados .carta{
-
-} */
-
+.cartas{
+    margin-top: 3rem;
+}
 .carta{
-    margin-bottom: 30px;
+    /* padding: 80px; */
+    margin: 10px;
+    /* margin-bottom: 3rem; */
     /* background-color:red; */
     background-position: center center;
     background-size: cover;
@@ -216,8 +229,8 @@ video{
     )
     ,url("/img/inicial.jpg");
         /* background-color: red; */
-        background-position: center center;
-        background-size: cover;
+        /* background-position: center center;
+        background-size: cover; */
         /* background-color: blue; */
 }
 
@@ -242,6 +255,7 @@ video{
 }
 
 .carta h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 15px;
 }
 
@@ -272,90 +286,13 @@ video{
     -o-transform: scale(1.1);
 }
 
-
-
-
-
-/* MEDIA DE BARRA DE NAVEGACIÓN */
-@media (max-width:800px){
-    .menu__hamburguer{
-        display: flex;
-    }
-
-    .menu__item{
-        --clip:0;
-        overflow:hidden ;
-    }
-
-    .menu__item--active{
-        --transform: rotate(0);
-        --background: #181818;
-    }
-
-    .menu__item--show{
-        background-color: var(--background);
-    }
-
-
-    .menu__links{
-        position: fixed;
-        max-width: 400px;
-        width: 100%;
-        top: 70px;
-        bottom: 0;
-        right: 0;
-        background-color: #181818;
-        overflow-y: auto;
-        display: grid;
-        grid-auto-rows: max-content;
-        transform: translateX(100%);
-    }
-
-    .menu__links--show{
-        transform: unset;
-        width: 100%;
-    }
-
-    .menu__link{
-        padding: 25px 0;
-        padding-left: 30px;
-        height: auto;
-    }
-
-    .menu__arrow{
-        margin-left: auto;
-        margin-right: 20px;
-    }
-
-    .menu__nesting{
-        display: grid;
-        position: unset;
-        width: 100%;
-        transform: translateY(0);
-        height: 0;
-        transition: height .3s;
-        -webkit-transition: height .3s;
-        -moz-transition: height .3s;
-        -ms-transition: height .3s;
-        -o-transition: height .3s;
-}
-
-    .menu__link--inside{
-        width: 90%;
-        margin-left: auto;
-        border-left: 1px solid #798499;
-    }
-}
-
-
-
 /* FOOTER */
 
 .footer{
     /* padding-top: 13rem; */
     /* background-color: #e1e1e1; */
     /* height: 100vh; */
-    margin-top: 120px;
+    /* margin-top: 120px; */
     /* background-color: #008080; */
     color: #181818;
     text-align: center;
@@ -380,25 +317,19 @@ footer .enlaces{
 }
 
 
-.links{
+.icons{
     margin: 0px auto;
 }
 
 
-.links li{
+.icons li{
     display: flex;
     /* margin: auto; */
     list-style: none;
 }
 
-.col{
-    /* padding: 50px; */
-    /* background-color: red; */
-}
 
-
-
-.links a{
+.icons a{
     color: black;
     flex-direction: column;
     padding: 10px;
@@ -406,6 +337,10 @@ footer .enlaces{
     text-decoration: none;
 }
 
+
+.icons p{
+    padding-top: 15px;
+}
 
 
 
@@ -435,8 +370,9 @@ footer .enlaces{
 
 
 
-.footer .links a:hover{
+.footer .icons p:hover{
     /* color: white; */
+    cursor: pointer;
     font-weight: bold;
 }
 
