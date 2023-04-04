@@ -74,12 +74,24 @@
 
 
 
-@media (max-width:600px){
+@media (max-width:470px){
 .footer{
+    /* height: 70vh; */
+    margin-top: 25rem;
+}
+
+/* #grados{
     height: 80vh;
-    margin-top: 10rem;
+} */
+
+
 }
-}
+
+/* @media (min-height:500px){
+    #grados{
+        height: 70vh;
+    }
+} */
 
 
 
@@ -88,6 +100,13 @@
 
 
 @media (min-width:970px){
+
+    #grados .container{
+       padding-bottom: 0px;
+
+    }
+    
+
     #grados .cartas{
         display: flex;
         justify-content: center;
@@ -113,13 +132,32 @@
         /*background-color:red;
         */background-position: center center;
         background-size: cover;
-        /* border-radius: 0p1x;
-        padding: 50px;
-        -webkit-border-radius: 0p1x;
-        -moz-border-radius: 0p1x;
-        -ms-border-radius: 0p1x;
-        -o-border-radius: 0p1x; */
+       }
+
+    .footer{
+        margin-top: 8rem;
+        /* justify-content: space-between; */
+        margin-left:8rem;
+        
+    }
+
+    .footer .container{
+        flex-direction: row;
+    }
+
+
 }
+
+@media (min-width:1300px){
+    .footer .container{
+        flex-direction: row;
+    }
+
+    .footer-sub{
+        
+    }
+
+
 }
 
 

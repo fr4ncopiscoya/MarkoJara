@@ -176,6 +176,22 @@ video{
     background-color: #00000079;
 } */
 
+/* #about{
+    height: 70vh;
+} */
+
+#about .container{
+    text-align: center;
+    padding: 2rem;
+}
+
+
+#about .container h1{
+    margin: 3rem ;
+}
+
+
+
 
 
 
@@ -183,7 +199,7 @@ video{
 #grados{
     padding: 2rem;
     padding-top: 0px;
-    height: 100vh;
+    height: 60vh;
     text-align: center;
     /* background-color: #e1e1e1; */
 }
@@ -287,19 +303,10 @@ video{
 }
 
 /* FOOTER */
-
 .footer{
-    /* padding-top: 13rem; */
-    /* background-color: #e1e1e1; */
-    /* height: 100vh; */
-    /* margin-top: 120px; */
-    /* background-color: #008080; */
+    margin-top: 18rem;
     color: #181818;
     text-align: center;
-}
-
-.footer-sub{
-    margin: 20px;
 }
 
 .footer-sub .col{
@@ -307,19 +314,21 @@ video{
 }
 
 
-footer .enlaces{
+.footer .container{
     margin-top: 30px;
+    align-items: center;
     text-align: center;
     /* padding-top: 20px; */
     /* margin: 20px; */
+      display: flex;
+      flex-direction: column;
+
+}
+
+/* .footer .icons{
     display: flex;
     flex-direction: column;
-}
-
-
-.icons{
-    margin: 0px auto;
-}
+} */
 
 
 .icons li{
@@ -341,7 +350,6 @@ footer .enlaces{
 .icons p{
     padding-top: 15px;
 }
-
 
 
 /* FOOTER COL */
