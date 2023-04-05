@@ -78,6 +78,8 @@
 .footer{
     /* height: 70vh; */
     margin-top: 25rem;
+    /* margin-bottom: 3rem; */
+
 }
 
 /* #grados{
@@ -105,7 +107,6 @@
        padding-bottom: 0px;
 
     }
-    
 
     #grados .cartas{
         display: flex;
@@ -118,6 +119,18 @@
         justify-content: center;
         /* align-items: center; */
         text-align: center;
+    }
+
+    #about .about-img{
+        /* background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+            )
+            ,url("/img/home_jara.jpg"); */
+            background-image: url("/img/home_jara.jpg");
+            background-size: cover;
+            background-position: center center;
     }
 
     .cartas{
@@ -135,26 +148,44 @@
        }
 
     .footer{
-        margin-top: 8rem;
+        height: 40vh;
+        margin-top: 12rem;
         /* justify-content: space-between; */
-        margin-left:8rem;
         
     }
-
+    
     .footer .container{
+        margin-left:7rem;
         flex-direction: row;
+        justify-content: space-between;
+        margin-right:7rem;
+    }
+
+    .icons{
+        margin-left: 7rem;
     }
 
 
 }
 
 @media (min-width:1300px){
-    .footer .container{
-        flex-direction: row;
+
+    .footer{
+        /* height: 20vh; */
+        margin-top: 8rem;
     }
 
-    .footer-sub{
-        
+    .footer .container{
+        margin-left: 11rem;
+        margin-right: 11rem;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer .col{
+        margin-left: 1rem;
     }
 
 
